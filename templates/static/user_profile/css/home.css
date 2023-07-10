@@ -1,0 +1,66 @@
+.card {
+  width: 100%;
+  background-color: var(--main-color);
+  padding: 20px;
+}
+
+.balance {
+  border-left: 2px solid var(--contrast-color);
+  padding-left: 10px;
+}
+
+.emphasis-font {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.font-light {
+  font-weight: 200;
+}
+
+.border-hr {
+  color: var(--dark-color);
+}
+
+.account-list {
+  background-color: var(--dark-color);
+  padding: 8px;
+  border-radius: 10px;
+}
+.account-total {
+  color: #b9f1d6;
+  font-weight: 200;
+  float: right;
+}
+
+.primary-button {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+
+  padding: 10px;
+  background-color: var(--contrast-color);
+  text-align: center;
+  border-radius: 15px;
+  border: none;
+}
+
+.expenses {
+  border-right: 2px solid var(--differential-color);
+  text-align: right;
+  padding-right: 10px;
+}
+
+.negative {
+  color: var(--differential-color);
+}
+
+.positive {
+  color: var(--contrast-color);
+}
+
+.arrow-icon {
+  width: 50%;
+  display: inline;
+}

@@ -1,0 +1,160 @@
+{% extends 'bases/base.html' %} {% load static %} {% block 'head' %}
+
+<link href="{% static 'user_profile/css/home.css' %}" rel="stylesheet" />
+
+{% endblock %} {% block 'body' %}
+<div class="container">
+  <br />
+  <br />
+  <div class="row">
+    <div class="col-md-3">
+      <a style="text-decoration: none; color: white" href="#">
+        <div class="card">
+          <div class="row">
+            <div class="col-md-8">
+              <span class="emphasis-font">RS 1.000,00</span>
+            </div>
+            <div class="col-md">
+              <img class="arrow-icon" src="{% static 'user_profile/img/arrowup.png' %}" />
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="col-md-3">
+      <a style="text-decoration: none; color: white" href="#">
+        <div class="card">
+          <div class="row">
+            <div class="col-md-8">
+              <span class="emphasis-font">RS 1.000,00</span>
+            </div>
+            <div class="col-md">
+              <img class="arrow-icon" src="{% static 'user_profile/img/arrowdown.png' %}" />
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+  <br />
+  <br />
+
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card">
+        <div class="balance">
+          <span class="emphasis-font">Total balance</span>
+          <br />
+          <span class="font-light">R$ 1.200,00</span>
+        </div>
+        <hr class="border-hr" />
+        <span class="emphasis-font">Your accounts</span>
+
+        <div class="accounts-div">
+          <div class="accounts-list">
+            <span>Nubank</span>
+            <span class="account-total">R$ 3.000,00</span>
+          </div>
+          <br />
+        </div>
+        <hr class="border-hr" />
+        <a href="#" class="primary-button">Manage accounts</a>
+      </div>
+    </div>
+
+    <div class="col-md-8">
+      <div class="card">
+        <div class="row">
+          <div class="col-md">
+            <div class="saldo">
+              <span class="emphasis-font">Monthly balance</span>
+              <br />
+              <span class="font-light">R$ 0.000,00</span>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="expenses">
+              <span class="emphasis-font">Monthly expenses</span>
+              <br />
+              <span class="font-light">R$ 0.000,00</span>
+            </div>
+          </div>
+        </div>
+        <hr class="border-hr" />
+        <span class="emphasis-font">Free total</span>
+        <span class="font-light negative">R$ 0.000,00</span>
+        <hr class="border-hr" />
+        <a href="#" class="primary-button">Menage monthly data</a>
+      </div>
+    </div>
+  </div>
+  <br />
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card">
+        <div class="saldo">
+          <span class="emphasis-font">Planning</span>
+        </div>
+        <hr class="border-hr" />
+        <a href="#" class="primary-button">Define planning</a>
+      </div>
+    </div>
+    <div class="col-md-8">
+      <div class="card">
+        <span class="emphasis-font">Financial balance</span>
+        <hr class="border-hr" />
+
+        <p>Essential expenses</p>
+        <div class="progress">
+          <div
+            class="progress-bar progress-bar-striped bg-info"
+            role="progressbar"
+            style="width: 20%"
+            aria-valuenow="50"
+            aria-valuemin="0"
+            aria-valuemax="100"
+          ></div>
+        </div>
+        <br />
+        <p>Non-essential expenses</p>
+        <div class="progress">
+          <div
+            class="progress-bar progress-bar-striped bg-info"
+            role="progressbar"
+            style="width: 40%"
+            aria-valuenow="50"
+            aria-valuemin="0"
+            aria-valuemax="100"
+          ></div>
+        </div>
+
+        <hr class="border-hr" />
+        <a href="#" class="primary-button">Change essential categories</a>
+      </div>
+    </div>
+  </div>
+  <br />
+  <div class="row">
+    <div class="col-md-4"></div>
+
+    <div class="col-md-8">
+      <div class="card">
+        <span class="emphasis-font">Manage accounts</span>
+        <hr class="border-hr" />
+
+        <span class="emphasis-font">Close to expire</span>
+        <span class="fonte-light">3 bills close to expire</span>
+        <br />
+        <span class="emphasis-font negativo">Vencidas</span>
+        <span class="fonte-light">0 expired bills</span>
+
+        <hr class="border-hr" />
+
+        <a href="#" class="primary-button">See more</a>
+      </div>
+    </div>
+  </div>
+  <br />
+  <br />
+</div>
+{% endblock %}
